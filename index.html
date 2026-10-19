@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Услуги и сервисы CPS" />
+    <title>Услуги и сервисы — CPS</title>
+  </head>
+  <body>
+    <div class="page">
+       <header class="header">
+        <!-- Бургер (скрывается на десктопе) -->
+        <button
+          class="header__menu-button"
+          type="button"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+        >
+          <img src="./src/assets/burger.svg" alt="" />
+        </button>
+
+        <!-- Логотип с разделителем -->
+        <a class="header__logo" href="#" aria-label="CPS — главная">
+          <img src="./src/assets/logo.svg" alt="CPS" />
+        </a>
+
+        <!-- Блок с иконками (теперь их 5, как в макете) -->
+        <div class="header__icons">
+          <button class="header__action header__action--call" type="button" aria-label="Позвонить">
+            <img src="./src/assets/call.svg" alt="" />
+          </button>
+          <button class="header__action header__action--chat" type="button" aria-label="Написать сообщение">
+            <img src="./src/assets/chat.svg" alt="" />
+          </button>
+          <button class="header__action header__action--profile" type="button" aria-label="Профиль">
+            <img src="./src/assets/profile.svg" alt="" />
+          </button>
+          <!-- Эти две иконки видны только на десктопе -->
+          <button class="header__action header__action--repair" type="button" aria-label="Оставить заявку">
+            <img src="./src/assets/repair.svg" alt="" />
+          </button>
+          <button class="header__action header__action--status" type="button" aria-label="Статус ремонта">
+            <img src="./src/assets/checkstatus.svg" alt="" />
+          </button>
+        </div>
+      </header>
+      <div class="page__overlay"></div>
+
+      <div class="page__layout">
+        <aside class="sidebar">
+          <div class="sidebar__header">
+            <a class="sidebar__logo" href="#">
+              <img src="./src/assets/logo.svg" alt="CPS" />
+            </a>
+
+            <button class="sidebar__close" type="button" aria-label="Закрыть меню">
+              <img src="./src/assets/burger.svg" alt="" />
+            </button>
+          </div>
+
+          <nav class="sidebar__nav" aria-label="Основная навигация">
+            <a class="sidebar__link" href="#">Ремонт техники</a>
+            <a class="sidebar__link" href="#">Услуги и сервисы</a>
+            <a class="sidebar__link" href="#">Корпоративным клиентам</a>
+            <a class="sidebar__link" href="#">Продавцам техники</a>
+            <a class="sidebar__link" href="#">Партнёрам</a>
+            <a class="sidebar__link" href="#">Производителям</a>
+            <a class="sidebar__link" href="#">Наши сервисные центры</a>
+            <a class="sidebar__link" href="#">Контакты</a>
+          </nav>
+
+          <div class="sidebar__footer">
+            <div class="sidebar__socials">
+              <button class="sidebar__icon" type="button" aria-label="Позвонить">
+                <img src="./src/assets/call.svg" alt="" />
+              </button>
+              <button class="sidebar__icon" type="button" aria-label="Написать сообщение">
+                <img src="./src/assets/chat.svg" alt="" />
+              </button>
+              <button class="sidebar__icon" type="button" aria-label="Профиль">
+                <img src="./src/assets/profile.svg" alt="" />
+              </button>
+            </div>
+
+            <a class="sidebar__email" href="mailto:mail@cps.com"> mail@cps.com </a>
+
+            <a class="sidebar__phone" href="tel:88008908900"> 8 800 890 8900 </a>
+
+            <div class="sidebar__languages">
+              <button class="sidebar__language sidebar__language--active" type="button">RU</button>
+              <button class="sidebar__language" type="button">EN</button>
+              <button class="sidebar__language" type="button">CH</button>
+            </div>
+          </div>
+        </aside>
+
+        <main class="content">
+          <section class="services">
+            <div class="services__heading">
+              <h1 class="services__title">Услуги и сервисы</h1>
+
+              <div class="services__desktop-actions">
+                <button class="services__request" type="button">
+                  Оставить заявку
+                  <img src="./src/assets/repair.svg" alt="" />
+                </button>
+
+                <button class="services__status" type="button">
+                  Статус ремонта
+                  <img src="./src/assets/checkstatus.svg" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <nav class="services__tabs" aria-label="Разделы услуг">
+              <a class="services__tab services__tab--active" href="#"> Ремонтируемые устройства </a>
+              <a class="services__tab" href="#"> Дополнительные услуги </a>
+              <a class="services__tab" href="#"> Цены на услуги </a>
+              <a class="services__tab" href="#"> Адреса сервисных центров </a>
+              <a class="services__tab" href="#"> Специальные цены </a>
+            </nav>
+
+            <div class="services__intro">
+              <div class="services__description">
+                <p>
+                  Мы являемся авторизованным сервисным центром по ремонту техники. Выполняем ремонт
+                  устройств различных производителей.
+                </p>
+
+                <p class="services__extra-text">
+                  Наши специалисты проводят диагностику и ремонт техники, используя профессиональное
+                  оборудование.
+                </p>
+                
+                <button class="services__read-more" type="button">
+                  <img class="services__read-more-icon" src="./src/assets/expand.svg" alt="" />
+                  Читать далее
+                </button>
+              </div>
+
+              <div class="services__image">
+                <img src="./src/assets/company.png" alt="Оборудование и логотип CPS" />
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
