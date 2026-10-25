@@ -1,152 +1,82 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Услуги и сервисы CPS" />
-    <title>Услуги и сервисы — CPS</title>
-  </head>
-  <body>
-    <div class="page">
-       <header class="header">
-        <!-- Бургер (скрывается на десктопе) -->
-        <button
-          class="header__menu-button"
-          type="button"
-          aria-label="Открыть меню"
-          aria-expanded="false"
-        >
-          <img src="./src/assets/burger.svg" alt="" />
-        </button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Услуги и сервисы</title>
+</head>
+<body>
+  <header class="header">
+    <button class="header__button header__button--type--burger" type="button">
+      <img class="header__icon" src="./src/assets/burger.svg" alt="Меню">
+    </button>
+    <span class="header__divider header__divider--place--logo"></span>
+    <a class="header__logo" href="./index.html">
+      <img class="header__logo-img" src="./src/assets/logo.svg" alt="CPS">
+    </a>
+    <div class="header__actions">
+      <a class="header__button header__button--type--contact" href="#">
+        <img class="header__icon" src="./src/assets/call.svg" alt="Позвонить">
+      </a>
+      <a class="header__button header__button--type--contact" href="#">
+        <img class="header__icon" src="./src/assets/chat.svg" alt="Чат">
+      </a>
+      <a class="header__button header__button--type--contact" href="#">
+        <img class="header__icon" src="./src/assets/profile.svg" alt="Профиль">
+      </a>
+      <span class="header__divider"></span>
+      <a class="header__button header__button--type--service" href="#">
+        <img class="header__icon" src="./src/assets/repair.svg" alt="Оставить заявку">
+      </a>
+      <a class="header__button header__button--type--service" href="#">
+        <img class="header__icon" src="./src/assets/checkstatus.svg" alt="Статус ремонта">
+      </a>
+    </div>
+  </header>
 
-        <!-- Логотип с разделителем -->
-        <a class="header__logo" href="#" aria-label="CPS — главная">
-          <img src="./src/assets/logo.svg" alt="CPS" />
+  <main class="content">
+    <div class="title">
+      <h1 class="title__heading">Услуги и сервисы</h1>
+      <div class="title__actions">
+        <a class="title__action" href="#">
+          <span class="title__action-text">Оставить заявку</span>
+          <img class="title__icon" src="./src/assets/repair.svg" alt="">
         </a>
-
-        <!-- Блок с иконками (теперь их 5, как в макете) -->
-        <div class="header__icons">
-          <button class="header__action header__action--call" type="button" aria-label="Позвонить">
-            <img src="./src/assets/call.svg" alt="" />
-          </button>
-          <button class="header__action header__action--chat" type="button" aria-label="Написать сообщение">
-            <img src="./src/assets/chat.svg" alt="" />
-          </button>
-          <button class="header__action header__action--profile" type="button" aria-label="Профиль">
-            <img src="./src/assets/profile.svg" alt="" />
-          </button>
-          <!-- Эти две иконки видны только на десктопе -->
-          <button class="header__action header__action--repair" type="button" aria-label="Оставить заявку">
-            <img src="./src/assets/repair.svg" alt="" />
-          </button>
-          <button class="header__action header__action--status" type="button" aria-label="Статус ремонта">
-            <img src="./src/assets/checkstatus.svg" alt="" />
-          </button>
-        </div>
-      </header>
-      <div class="page__overlay"></div>
-
-      <div class="page__layout">
-        <aside class="sidebar">
-          <div class="sidebar__header">
-            <a class="sidebar__logo" href="#">
-              <img src="./src/assets/logo.svg" alt="CPS" />
-            </a>
-
-            <button class="sidebar__close" type="button" aria-label="Закрыть меню">
-              <img src="./src/assets/burger.svg" alt="" />
-            </button>
-          </div>
-
-          <nav class="sidebar__nav" aria-label="Основная навигация">
-            <a class="sidebar__link" href="#">Ремонт техники</a>
-            <a class="sidebar__link" href="#">Услуги и сервисы</a>
-            <a class="sidebar__link" href="#">Корпоративным клиентам</a>
-            <a class="sidebar__link" href="#">Продавцам техники</a>
-            <a class="sidebar__link" href="#">Партнёрам</a>
-            <a class="sidebar__link" href="#">Производителям</a>
-            <a class="sidebar__link" href="#">Наши сервисные центры</a>
-            <a class="sidebar__link" href="#">Контакты</a>
-          </nav>
-
-          <div class="sidebar__footer">
-            <div class="sidebar__socials">
-              <button class="sidebar__icon" type="button" aria-label="Позвонить">
-                <img src="./src/assets/call.svg" alt="" />
-              </button>
-              <button class="sidebar__icon" type="button" aria-label="Написать сообщение">
-                <img src="./src/assets/chat.svg" alt="" />
-              </button>
-              <button class="sidebar__icon" type="button" aria-label="Профиль">
-                <img src="./src/assets/profile.svg" alt="" />
-              </button>
-            </div>
-
-            <a class="sidebar__email" href="mailto:mail@cps.com"> mail@cps.com </a>
-
-            <a class="sidebar__phone" href="tel:88008908900"> 8 800 890 8900 </a>
-
-            <div class="sidebar__languages">
-              <button class="sidebar__language sidebar__language--active" type="button">RU</button>
-              <button class="sidebar__language" type="button">EN</button>
-              <button class="sidebar__language" type="button">CH</button>
-            </div>
-          </div>
-        </aside>
-
-        <main class="content">
-          <section class="services">
-            <div class="services__heading">
-              <h1 class="services__title">Услуги и сервисы</h1>
-
-              <div class="services__desktop-actions">
-                <button class="services__request" type="button">
-                  Оставить заявку
-                  <img src="./src/assets/repair.svg" alt="" />
-                </button>
-
-                <button class="services__status" type="button">
-                  Статус ремонта
-                  <img src="./src/assets/checkstatus.svg" alt="" />
-                </button>
-              </div>
-            </div>
-
-            <nav class="services__tabs" aria-label="Разделы услуг">
-              <a class="services__tab services__tab--active" href="#"> Ремонтируемые устройства </a>
-              <a class="services__tab" href="#"> Дополнительные услуги </a>
-              <a class="services__tab" href="#"> Цены на услуги </a>
-              <a class="services__tab" href="#"> Адреса сервисных центров </a>
-              <a class="services__tab" href="#"> Специальные цены </a>
-            </nav>
-
-            <div class="services__intro">
-              <div class="services__description">
-                <p>
-                  Мы являемся авторизованным сервисным центром по ремонту техники. Выполняем ремонт
-                  устройств различных производителей.
-                </p>
-
-                <p class="services__extra-text">
-                  Наши специалисты проводят диагностику и ремонт техники, используя профессиональное
-                  оборудование.
-                </p>
-                
-                <button class="services__read-more" type="button">
-                  <img class="services__read-more-icon" src="./src/assets/expand.svg" alt="" />
-                  Читать далее
-                </button>
-              </div>
-
-              <div class="services__image">
-                <img src="./src/assets/company.png" alt="Оборудование и логотип CPS" />
-              </div>
-            </div>
-          </section>
-        </main>
+        <a class="title__action" href="#">
+          <span class="title__action-text">Статус ремонта</span>
+          <img class="title__icon" src="./src/assets/checkstatus.svg" alt="">
+        </a>
       </div>
     </div>
 
-    <script type="module" src="/src/js/main.js"></script>
-  </body>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link nav__link--active" href="#">Ремонтируемые бренды</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Ремонтируемые устройства</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Цены на услуги</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Адреса сервисных центров</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Специальные цены</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
+      </ul>
+    </nav>
+
+    <section class="card">
+      <div class="card__body">
+        <div class="card__text">
+          <p class="card__paragraph">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+          <p class="card__paragraph">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+        </div>
+        <div class="card__more">
+          <img class="card__more-icon" src="./src/assets/expand.svg" alt="">
+          <span class="card__more-text">Читать далее</span>
+        </div>
+      </div>
+      <div class="card__picture">
+        <img class="card__image" src="./src/assets/company-gps.png" alt="Вывеска сервисного центра CPS">
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="./src/js/main.js"></script>
+</body>
 </html>

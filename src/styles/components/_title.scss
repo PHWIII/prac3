@@ -1,0 +1,49 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  @include container;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: $color-accent;
+  }
+
+  &__heading {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+
+  &__actions {
+    display: none;
+    gap: 32px;
+
+    @include desktop {
+      display: flex;
+    }
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+  }
+
+  &__icon {
+    width: 40px;
+    height: auto;
+  }
+}
