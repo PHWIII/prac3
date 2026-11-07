@@ -5,24 +5,23 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  min-height: 88px;
   padding: 18px 16px;
-  border-bottom: 2px solid rgba($color-accent, 0.2);
+  border-bottom: 1px solid $color-border;
   background-color: $color-white;
 
-  @include tablet {
-    gap: 20px;
-    padding: 18px 24px;
-  }
+  @include tablet { gap: 20px; padding: 18px 24px; }
+  @include desktop { display: none; }
 
-  @include desktop {
-    flex: 0 0 $sidebar-width;
-    flex-direction: column;
-    align-items: flex-start;
-    border-right: 2px solid rgba($color-accent, 0.2);
-    border-bottom: 0;
-  }
-
-  &__button {
+  &__button { display: flex; flex-shrink: 0; }
+  &__button--type--contact { display: none; @include tablet { display: flex; } }
+  &__button--type--service { display: none; }
+  &__icon { width: 40px; height: 40px; }
+  &__logo-img { width: 98px; height: auto; }
+  &__divider { flex-shrink: 0; width: 1px; height: 30px; background-color: $color-border; }
+  &__divider--place--logo { display: none; @include tablet { display: block; } }
+  &__actions { display: flex; align-items: center; gap: 16px; margin-left: auto; }
+ &__button {
     display: flex;
     flex-shrink: 0;
 
@@ -96,4 +95,5 @@
       margin-left: 0;
     }
   }
+
 }

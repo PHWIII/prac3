@@ -6,8 +6,58 @@
   <title>Услуги и сервисы</title>
 </head>
 <body>
+  <div class="page-overlay" aria-hidden="true"></div>
+
+  <aside class="sidebar" id="site-menu" aria-label="Главное меню">
+    <div class="sidebar__top">
+      <button class="sidebar__icon-button sidebar__close" type="button" aria-label="Закрыть меню">
+        <img src="./src/assets/krest.svg" alt="">
+      </button>
+      <a class="sidebar__logo" href="./index.html" aria-label="CPS — главная">
+        <img src="./src/assets/logo.svg" alt="CPS">
+      </a>
+      <button class="sidebar__icon-button sidebar__search" type="button" aria-label="Поиск">
+        <img src="./src/assets/search.svg" alt="">
+      </button>
+    </div>
+
+    <nav class="sidebar__navigation" aria-label="Разделы сайта">
+      <ul class="sidebar__list">
+        <li class="sidebar__item"><a class="sidebar__link is-active" href="#repair" aria-current="page">Ремонт техники</a></li>
+        <li class="sidebar__item"><a class="sidebar__link" href="#services">Услуги и сервисы</a></li>
+        <li class="sidebar__item"><a class="sidebar__link" href="#corporate">Корпоративным клиентам</a></li>
+        <li class="sidebar__item"><a class="sidebar__link" href="#sellers">Продавцам техники</a></li>
+        <li class="sidebar__item"><a class="sidebar__link" href="#partners">Партнерам</a></li>
+        <li class="sidebar__item"><a class="sidebar__link" href="#manufacturers">Производителям</a></li>
+        <li class="sidebar__item"><a class="sidebar__link" href="#centers">Наши сервисные центры</a></li>
+        <li class="sidebar__item"><a class="sidebar__link" href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <div class="sidebar__bottom">
+      <div class="sidebar__contacts" aria-label="Связаться с нами">
+        <a class="sidebar__contact" href="tel:88008908900" aria-label="Позвонить">
+          <img class="sidebar__contact-icon" src="./src/assets/call.svg" data-hover-src="./src/assets/call 1.svg" alt="">
+        </a>
+        <a class="sidebar__contact" href="mailto:mail@cps.com" aria-label="Написать сообщение">
+          <img class="sidebar__contact-icon" src="./src/assets/chat.svg" data-hover-src="./src/assets/chat 1.svg" alt="">
+        </a>
+        <a class="sidebar__contact" href="#profile" aria-label="Профиль">
+          <img class="sidebar__contact-icon" src="./src/assets/profile.svg" data-hover-src="./src/assets/profile 1.svg" alt="">
+        </a>
+      </div>
+      <a class="sidebar__email" href="mailto:mail@cps.com">mail@cps.com</a>
+      <a class="sidebar__phone" href="tel:88008908900">8 800 890 8900</a>
+      <div class="sidebar__languages" aria-label="Выбор языка">
+        <button class="sidebar__language" type="button" aria-pressed="true">RU</button>
+        <button class="sidebar__language" type="button" aria-pressed="false">EN</button>
+        <button class="sidebar__language" type="button" aria-pressed="false">CH</button>
+      </div>
+    </div>
+  </aside>
+
   <header class="header">
-    <button class="header__button header__button--type--burger" type="button">
+    <button class="header__button header__button--type--burger" type="button" aria-label="Открыть меню" aria-controls="site-menu" aria-expanded="false">
       <img class="header__icon" src="./src/assets/burger.svg" alt="Меню">
     </button>
     <span class="header__divider header__divider--place--logo"></span>
