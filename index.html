@@ -35,17 +35,30 @@
     </nav>
 
     <div class="sidebar__bottom">
-      <div class="sidebar__contacts" aria-label="Связаться с нами">
-        <a class="sidebar__contact" href="tel:88008908900" aria-label="Позвонить">
-          <img class="sidebar__contact-icon" src="./src/assets/call.svg" data-hover-src="./src/assets/call 1.svg" alt="">
-        </a>
-        <a class="sidebar__contact" href="mailto:mail@cps.com" aria-label="Написать сообщение">
-          <img class="sidebar__contact-icon" src="./src/assets/chat.svg" data-hover-src="./src/assets/chat 1.svg" alt="">
-        </a>
-        <a class="sidebar__contact" href="#profile" aria-label="Профиль">
-          <img class="sidebar__contact-icon" src="./src/assets/profile.svg" data-hover-src="./src/assets/profile 1.svg" alt="">
-        </a>
-      </div>
+
+<div class="sidebar__contacts" aria-label="Связаться с нами">
+  <a class="sidebar__contact" href="tel:88008908900" aria-label="Позвонить">
+    <img class="sidebar__contact-icon"
+         src="./src/assets/call.svg"
+         data-hover-icon="call"
+         alt="">
+  </a>
+
+  <a class="sidebar__contact" href="mailto:mail@cps.com" aria-label="Написать сообщение">
+    <img class="sidebar__contact-icon"
+         src="./src/assets/chat.svg"
+         data-hover-icon="chat"
+         alt="">
+  </a>
+
+  <a class="sidebar__contact" href="#profile" aria-label="Профиль">
+    <img class="sidebar__contact-icon"
+         src="./src/assets/profile.svg"
+         data-hover-icon="profile"
+         alt="">
+  </a>
+</div>
+
       <a class="sidebar__email" href="mailto:mail@cps.com">mail@cps.com</a>
       <a class="sidebar__phone" href="tel:88008908900">8 800 890 8900</a>
       <div class="sidebar__languages" aria-label="Выбор языка">
@@ -56,47 +69,78 @@
     </div>
   </aside>
 
-  <header class="header">
-    <button class="header__button header__button--type--burger" type="button" aria-label="Открыть меню" aria-controls="site-menu" aria-expanded="false">
-      <img class="header__icon" src="./src/assets/burger.svg" alt="Меню">
-    </button>
-    <span class="header__divider header__divider--place--logo"></span>
-    <a class="header__logo" href="./index.html">
-      <img class="header__logo-img" src="./src/assets/logo.svg" alt="CPS">
+
+<header class="header">
+  <button class="header__button header__button--type--burger"
+          type="button"
+          aria-label="Открыть меню"
+          aria-controls="site-menu"
+          aria-expanded="false">
+    <img class="header__icon"
+         src="./src/assets/burger.svg"
+         data-hover-icon="burger"
+         alt="Меню">
+  </button>
+
+  <span class="header__divider header__divider--place--logo"></span>
+
+  <a class="header__logo" href="./index.html">
+    <img class="header__logo-img" src="./src/assets/logo.svg" alt="CPS">
+  </a>
+
+  <div class="header__actions">
+    <a class="header__button header__button--type--contact" href="#">
+      <img class="header__icon" src="./src/assets/call.svg"
+           data-hover-icon="call" alt="Позвонить">
     </a>
-    <div class="header__actions">
-      <a class="header__button header__button--type--contact" href="#">
-        <img class="header__icon" src="./src/assets/call.svg" alt="Позвонить">
-      </a>
-      <a class="header__button header__button--type--contact" href="#">
-        <img class="header__icon" src="./src/assets/chat.svg" alt="Чат">
-      </a>
-      <a class="header__button header__button--type--contact" href="#">
-        <img class="header__icon" src="./src/assets/profile.svg" alt="Профиль">
-      </a>
-      <span class="header__divider"></span>
-      <a class="header__button header__button--type--service" href="#">
-        <img class="header__icon" src="./src/assets/repair.svg" alt="Оставить заявку">
-      </a>
-      <a class="header__button header__button--type--service" href="#">
-        <img class="header__icon" src="./src/assets/checkstatus.svg" alt="Статус ремонта">
-      </a>
-    </div>
-  </header>
+
+    <a class="header__button header__button--type--contact" href="#">
+      <img class="header__icon" src="./src/assets/chat.svg"
+           data-hover-icon="chat" alt="Чат">
+    </a>
+
+    <a class="header__button header__button--type--contact" href="#">
+      <img class="header__icon" src="./src/assets/profile.svg"
+           data-hover-icon="profile" alt="Профиль">
+    </a>
+
+    <span class="header__divider"></span>
+
+    <a class="header__button header__button--type--service" href="#">
+      <img class="header__icon" src="./src/assets/repair.svg"
+           data-hover-icon="repair" alt="Оставить заявку">
+    </a>
+
+    <a class="header__button header__button--type--service" href="#">
+      <img class="header__icon" src="./src/assets/checkstatus.svg"
+           data-hover-icon="checkstatus" alt="Статус ремонта">
+    </a>
+  </div>
+</header>
+
 
   <main class="content">
     <div class="title">
       <h1 class="title__heading">Услуги и сервисы</h1>
-      <div class="title__actions">
-        <a class="title__action" href="#">
-          <span class="title__action-text">Оставить заявку</span>
-          <img class="title__icon" src="./src/assets/repair.svg" alt="">
-        </a>
-        <a class="title__action" href="#">
-          <span class="title__action-text">Статус ремонта</span>
-          <img class="title__icon" src="./src/assets/checkstatus.svg" alt="">
-        </a>
-      </div>
+
+<div class="title__actions">
+  <a class="title__action" href="#">
+    <span class="title__action-text">Оставить заявку</span>
+    <img class="title__icon"
+         src="./src/assets/repair.svg"
+         data-hover-icon="repair"
+         alt="">
+  </a>
+
+  <a class="title__action" href="#">
+    <span class="title__action-text">Статус ремонта</span>
+    <img class="title__icon"
+         src="./src/assets/checkstatus.svg"
+         data-hover-icon="checkstatus"
+         alt="">
+  </a>
+</div>
+
     </div>
 
     <nav class="nav">
